@@ -54,7 +54,7 @@ void whoIsConst()
     int a=10;
     int b=12;
     
-    //常量指针——指针指向的常量——对方——固定电话：电话不能到处跑
+    //常量指针——指针指向的常量——对方——固定电话：电话（point）不能到处跑
     const int* pointer=&a;
     pointer=&b;
     //*pointer=20;
@@ -117,19 +117,16 @@ int main(int argc, const char * argv[]) {
     
     //引用传参
     swapint2(a,b);
-    cout<<"指针传参"<<endl;
+    cout<<"引用传参"<<endl;
     cout<<"a="<<a<<endl;
     cout<<"b="<<b<<endl;
     
     
     //值传递
     swapint3(a,b);
-    cout<<"指针传参"<<endl;
+    cout<<"值传参"<<endl;
     cout<<"a="<<a<<endl;
     cout<<"b="<<b<<endl;
-    
-    
-    
-    
+
     return 0;
 }
